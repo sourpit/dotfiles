@@ -79,10 +79,6 @@ export MPD_PORT=6699
 export MOZ_USE_XINPUT2=1
 export MYVIMRC="$XDG_CONFIG_HOME/nvim/init.lua"
 export USE_SYS_UTILS=1
-export GIT_SSH_COMMAND="dbclient -i ~/.ssh/dropbear_rsa"
-export AUDIODEVICE=sndio
-export SDL_AUDIODRIVER=sndio
-export ALSA_PCM_CARD=sndio
 
 # This file is sourced by bash for login shells.  The following line
 # runs your .bashrc and is recommended by the bash info pages.
