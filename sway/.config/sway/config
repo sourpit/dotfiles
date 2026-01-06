@@ -17,6 +17,7 @@ set $term foot
 # output eDP-1 resolution 1920x1080 position 1920,0
 # output * adaptive_sync on scale 1.5
 output * scale 2
+output eDP-1 allow_tearing yes
 output eDP-1 resolution 1920x1080@60hz scale 1
 output HDMI-A-1 resolution 1920x1080@60hz scale 2
 
@@ -53,11 +54,7 @@ for_window [title = "Load Options"] floating enable
 for_window [title = "Property Browser — SolveSpace"] floating enable
 for_window [app_id="com.hex-rays.ida"] floating enable
 
-#--- Idle configuration ----------------------------
-exec swayidle -w \
-         timeout 1200 'swaylock -f -c 000000'
-
-focus_follows_mouse no
+focus_follows_mouse yes
 
 #--- Input configuration ----------------------------
 #
@@ -92,7 +89,7 @@ bar {
   status_command  i3status
   separator_symbol "  "
   position bottom
-  font  FiraCode Nerd Font,Bold 15px
+  font  FiraCode Nerd Font,Bold 18px
   mode dock
   colors {
         statusline   #ebdbb2

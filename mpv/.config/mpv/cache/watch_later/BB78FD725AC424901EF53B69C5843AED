@@ -1,0 +1,6 @@
+start=157.431293
+volume=58.000000
+vf=@autodeint-detect:idet,@autodeint-dominance:setfield=mode=auto,@autodeint:lavfi-pullup,@autodeint-ivtc-detect:idet
+vid=1
+sid=1
+sub-ass-override=force

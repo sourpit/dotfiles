@@ -1,0 +1,3 @@
+bind r reload-all
+
+bind m exec setsid -f mpv --terminal=no "%l" &

@@ -1,4 +1,4 @@
 jellyfin.conf
-/cache/
+/cache/*
 memo-history.log
 uosc-history.json

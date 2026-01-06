@@ -52,6 +52,9 @@ set $menu tofi-drun | xargs swaymsg exec --
     # Capslock (If you don't want to use the backend)
     bindsym --release Caps_Lock exec swayosd-client --caps-lock
 
+    # Screenlock
+    bindsym $mod+shift+l exec ~/.local/bin/lock.sh
+
     # Brightness control
     bindsym XF86MonBrightnessDown exec light -U 5
     bindsym XF86MonBrightnessUp exec light -A 5
@@ -77,6 +80,9 @@ set $menu tofi-drun | xargs swaymsg exec --
 
     # Music
     bindsym $mod+m exec $term -a "mpc" ncmpcpp
+
+    # RSS
+    bindsym $meta+o exec $term -a "news" newsraft
 
     # wf-recorder for streaming
     bindsym CTRL+t+w exec wf-recorder --audio -f "rtmp://live.twitch.tv/app/live_1150648356_KNeYUwhdH7C8i01I3i50XqnusVLraA" -c h264_vaapi -d /dev/dri/renderD128
@@ -111,15 +117,15 @@ set $menu tofi-drun | xargs swaymsg exec --
     bindsym $mod+Right focus right
 
     # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    bindsym shift+$meta+$left move left
+    bindsym shift+$meta+$down move down
+    bindsym shift+$meta+$up move up
+    bindsym shift+$meta+$right move right
     # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
+    bindsym shift+$meta+Left move left
+    bindsym shift+$meta+Down move down
+    bindsym shift+$meta+Up move up
+    bindsym shift+$meta+Right move right
 
 #
 # Workspaces:

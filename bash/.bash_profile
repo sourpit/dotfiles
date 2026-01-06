@@ -39,6 +39,7 @@ export QT_QPA_PLATFORM=wayland
 export MOZ_ENABLE_WAYLAND=1
 export SDL_VIDEODRIVER=wayland
 export WLR_RENDERER=vulkan
+# export MESA_LOADER_DRIVER_OVERRIDE=zink
 
 # ~/ Clean-up:
 export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
